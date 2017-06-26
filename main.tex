@@ -1,0 +1,163 @@
+%\linebreak
+\documentclass[a4paper,12pt]{report}
+\usepackage[utf8x]{inputenc}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{fancyvrb}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{multirow}
+
+\usepackage{titlesec}
+
+\usepackage[round]{natbib}
+\bibliographystyle{dinat}
+\usepackage{alltt}
+\usepackage{adjustbox}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage[francais]{babel}
+\usepackage{url} % Pour écrire des adresses cliquables.
+\usepackage{lmodern} % Pour changer le pack de police.
+\usepackage[top=0.7cm, bottom=1.5cm, left=1.2cm, right=1.2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{url}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage[french]{minitoc}
+\usepackage[colorlinks]{hyperref}
+\usepackage[gen]{eurosym}
+\usepackage{caption}
+\usepackage[nottoc, notlof, notlot]{tocbibind}
+\usepackage{pdfpages}
+\usepackage[Lenny]{fncychap}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{epigraph}
+\usepackage{setspace}
+\linespread{1.5}
+\usepackage{booktabs}
+\usepackage{makecell}
+\usepackage{tabularx}
+
+\usepackage{lscape}
+
+\usepackage{rotating}
+\hypersetup{	
+	colorlinks=true, 
+	breaklinks=true, 
+	urlcolor= blue, 
+	linkcolor= black,	
+	citecolor=blue,	 
+	pdftitle={},
+	pdfauthor={},  
+	pdfsubject={},	 
+	pdfcreator={}
+}
+
+\usepackage[T1]{fontenc}
+
+\usepackage{subcaption}
+
+\setcounter{page}{1}
+\fancyhead[L]{\leftmark}
+\fancyhead[R]{}
+
+\fancyfoot[C]{}
+\fancyfoot[R]{\thepage}
+
+\setcounter{tocdepth}{4}
+\setcounter{secnumdepth}{4}
+
+\makeatletter \@addtoreset{chapter}{part}
+\makeatother
+\begin{document}
+	
+
+	
+		\newpage
+		\begin{center}
+			\includegraphics[width=0.5\linewidth]{garde/u-paris10}
+			\vspace{3cm}
+		\end{center}
+			
+		\begin{center}
+			\vspace{0.3cm}
+			\large  
+			\textbf{Rapport de Stage Master 1 MIAGE classique}\\
+			\vspace{0.7cm} \large Thème\\
+			\vskip 0.2in
+		\end{center}
+		
+		
+		\begin{center}
+        	\hrule
+        \vspace{.7cm}
+        {\Huge\textbf{ Coordinateur de projet  - Consultant BI}}\\
+        \vspace{.7cm}
+            \hrule
+		\end{center}			
+		
+			\vspace{1cm}
+		\normalsize
+		\vskip 0.2in
+		
+		\hspace{0.3cm}	\textbf{   Organisme d’accueil : 
+		\hspace{1.5cm}
+			\begin{right}
+			\includegraphics[width=0.3\linewidth]{images_BOLLORE/bollore}
+        	\end{right}
+		}	\\
+		~~\\
+		\begin{flushleft}
+			\begin{center}
+				\begin{tabular}{lllllllllll}
+					\textbf{Réalisé par :}    &&&&&&&&&& \textbf{Encadré par :}\\
+					\hspace{0.9cm} Zakaria MEDJIR    &&&&&&&&&& \hspace{0.2cm} Monsieur  Reda BENDRAOU  \\
+					\hspace{5cm}             &&&&&&&&&&  \hspace{0.2cm} Monsieur Julien SALLARD \\  
+					
+				\end{tabular}
+			\end{center}
+		\end{flushleft}
+		
+		\vskip 0.1in
+		
+		\begin{tabular}{llllllllll}
+	
+		\end{tabular}
+		
+		~~\\
+		\vskip 0.3in
+		\begin{center}
+			\vspace{0.3cm} \textbf{Promotion : 2016-2017}
+		\end{center}
+	\newpage
+		\pagenumbering{roman}
+	
+
+\include{001-Remerciement}
+
+
+\newpage
+\tableofcontents
+\listoffigures
+\addcontentsline{toc}{chapter}{Liste des figures}
+
+\newpage
+\include{002-Abreviation}
+
+
+
+
+\newpage
+\pagenumbering{arabic}
+\include{01-Introduction}
+\include{02-Travail_realise}
+\include{03-Bilan}
+\include{04-Conclusion}
+\include{05-Biblio}
+
+\end{document}
